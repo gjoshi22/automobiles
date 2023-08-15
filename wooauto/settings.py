@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from django.contrib.messages import constants as messages
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-2brjpo49v9lvhr%s*t%s%@w^(3awmd$8lb@72wq4&65dpn2(*t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -84,9 +85,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'wooauto',
-        'USER' : 'postgres',
+        'USER': 'postgres',
         'PASSWORD': 'Wooster123',
-        'HOST' : 'localhost'
+        'HOST': 'localhost'
     }
 }
 
@@ -130,10 +131,10 @@ USE_TZ = True
 STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR /'wooauto/static'
+    BASE_DIR / 'wooauto/static'
 ]
 
-#Media Folder Settings
+# Media Folder Settings
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
@@ -142,9 +143,7 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Messages
-from django.contrib.messages import constants as messages
+# Messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
-
