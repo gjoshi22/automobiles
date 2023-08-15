@@ -1,0 +1,1 @@
+web gunicorn wooauto.wsgi:application --log-file -
