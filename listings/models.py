@@ -56,8 +56,8 @@ class Listing(models.Model):
 
     # Change make_date to only store the year
     # make_date = models.PositiveIntegerField()
-    make_date = models.DateField(default=timezone.now(
-    ).date(), blank=True)  # The final desired state
+    make_date = models.DateField(
+        default=timezone.now, blank=True)  # The final desired state
 
     # Change photo fields to allow them to be null
     photo_main = models.ImageField(
@@ -72,7 +72,7 @@ class Listing(models.Model):
         upload_to='photos/%Y/%m/%d/', null=True, blank=True)
 
     is_published = models.BooleanField(default=True)
-    list_date = models.DateField(default=timezone.now().date(), blank=True)
+    list_date = models.DateField(default=timezone.now, blank=True)
 
     def __str__(self):
         return self.title
