@@ -32,7 +32,7 @@
 
 
 from django.db import models
-from datetime import datetime
+from datetime import datetime, date
 from seller.models import Seller
 from django.utils import timezone
 
@@ -56,8 +56,9 @@ class Listing(models.Model):
 
     # Change make_date to only store the year
     # make_date = models.PositiveIntegerField()
-    make_date = models.DateField(
-        default=timezone.now, blank=True)  # The final desired state
+    # make_date = models.DateField(
+    # default=timezone.now, blank=True)  # The final desired state
+    make_date = models.DateField(default=date.today)
 
     # Change photo fields to allow them to be null
     photo_main = models.ImageField(
