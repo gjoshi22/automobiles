@@ -30,7 +30,7 @@ DEBUG = config('DEBUG', cast=bool)
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['wooauto-83bfc0cc9960.herokuapp.com']
+ALLOWED_HOSTS = ['automobileswoo-f4fbbfd878bf.herokuapp.com']
 
 
 # Application definition
