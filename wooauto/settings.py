@@ -151,7 +151,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'wooauto/static'
 ]
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Media Folder Settings
 MEDIA_ROOT = BASE_DIR / 'media'
