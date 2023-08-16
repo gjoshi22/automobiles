@@ -58,8 +58,7 @@ class Listing(models.Model):
     # make_date = models.PositiveIntegerField()
     # make_date = models.DateField(
     # default=timezone.now, blank=True)  # The final desired state
-    # make_date = models.DateField(default=date.today)
-    make_date = models.PositiveIntegerField()
+    make_date = models.DateField(default=timezone.now, blank=True)
 
     # Change photo fields to allow them to be null
     photo_main = models.ImageField(
