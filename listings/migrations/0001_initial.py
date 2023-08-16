@@ -18,7 +18,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Listing',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True,
+                 primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=200)),
                 ('address', models.CharField(max_length=200)),
                 ('city', models.CharField(max_length=100)),
@@ -33,15 +34,23 @@ class Migration(migrations.Migration):
                 ('torque', models.FloatField()),
                 ('category', models.CharField(max_length=15)),
                 ('fuel_type', models.CharField(max_length=10)),
-                ('make_date', models.DateField(default=datetime.date.today)),
-                ('photo_main', models.ImageField(blank=True, null=True, upload_to='photos/%Y/%m/%d/')),
-                ('photo_1', models.ImageField(blank=True, null=True, upload_to='photos/%Y/%m/%d/')),
-                ('photo_2', models.ImageField(blank=True, null=True, upload_to='photos/%Y/%m/%d/')),
-                ('photo_3', models.ImageField(blank=True, null=True, upload_to='photos/%Y/%m/%d/')),
-                ('photo_4', models.ImageField(blank=True, null=True, upload_to='photos/%Y/%m/%d/')),
+                ('make_date', models.DateField(
+                    blank=True, default=django.utils.timezone.now)),
+                ('photo_main', models.ImageField(blank=True,
+                 null=True, upload_to='photos/%Y/%m/%d/')),
+                ('photo_1', models.ImageField(blank=True,
+                 null=True, upload_to='photos/%Y/%m/%d/')),
+                ('photo_2', models.ImageField(blank=True,
+                 null=True, upload_to='photos/%Y/%m/%d/')),
+                ('photo_3', models.ImageField(blank=True,
+                 null=True, upload_to='photos/%Y/%m/%d/')),
+                ('photo_4', models.ImageField(blank=True,
+                 null=True, upload_to='photos/%Y/%m/%d/')),
                 ('is_published', models.BooleanField(default=True)),
-                ('list_date', models.DateField(blank=True, default=django.utils.timezone.now)),
-                ('seller', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='seller.seller')),
+                ('list_date', models.DateField(
+                    blank=True, default=django.utils.timezone.now)),
+                ('seller', models.ForeignKey(
+                    on_delete=django.db.models.deletion.DO_NOTHING, to='seller.seller')),
             ],
         ),
     ]
