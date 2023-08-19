@@ -1,0 +1,165 @@
+.btn-secondary {
+  color: #fff !important; }
+
+img {
+  width: 100%; }
+
+.logo {
+  width: 80px; }
+
+.navbar {
+  text-transform: uppercase; }
+
+.social a {
+  margin-right: 0.4rem; }
+
+#showcase {
+  background: black;
+  .submit-button{
+    background-color: #1DB954;
+  }
+  position: relative;
+  min-height: 650px;
+  color: #fff;
+  padding-top: 6rem; }
+  #showcase .home-search {
+    min-height: 400px;
+    position: relative;
+    border-radius: 5px; }
+  #showcase .overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+    width: 100%;
+    background: black;
+  border-radius: 5px; }
+
+  .text-white-class{
+    color: white !important;
+  }
+#services {
+  background-color: black !important;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden; }
+  #services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+ }
+
+#showcase-inner {
+  background: black;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px; 
+  
+.text-white {
+  color: white !important;
+}}
+  #showcase-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+}
+  #showcase-inner.showcase-search {
+    min-height: 270px; }
+
+#work {
+  background-color: black !important;
+  padding: 6rem 0; }
+  #work.text-white {
+    color: white !important; }
+
+  #listings {
+    background-color: white; }
+
+  #main-footer {
+      background-color: white !important;}
+
+      .btn-primary {
+        background-color: #1DB954 !important;
+        border-color: #1DB954;
+      }
+      .btn-primary:hover {
+        background-color: black !important;
+        border-color: black !important;
+    }
+
+    .badge-secondary{
+      background-color: white !important;
+    }
+    .card-body {
+      position: relative;
+      .btn-primary {
+        position: absolute;
+        bottom:   0;
+        margin-bottom: 10px;
+        max-width: 90%;
+      }
+    }
+    #team .our-team-wrapper{
+      border-radius: 15px;
+      border: solid;
+      border-width:  1px;
+      padding-top: 15px;
+      gap: 10px;
+    }
+    .card {
+      background-color: white !important;
+      min-height: 750px;
+    }
+    span.badge.text-white {
+      color: black !important;
+
+    }
+    .card.badge {
+      color: black !important;
+    }
+    .text-secondary {
+      color: black !important;
+    }
+.listing-preview a {
+  position: relative; }
+
+  /* #team .col-md-4{
+    background-color: black !important;
+    padding: 6rem 0;
+  } */
+
+footer#min-footer.text-white {
+color: black !important;
+}
+@media (max-width: 991px) {
+  #showcase {
+    padding-top: 4rem; }
+    #showcase h1 {
+      font-size: 40px; }
+  .hide-md-down {
+    display: none; } }
+
+@media (max-width: 768px) {
+  #showcase {
+    padding-top: 3rem; }
+    #showcase h1 {
+      font-size: 40px; }
+    #showcase p {
+      display: none; }
+  #top-bar {
+    text-align: center; }
+    #top-bar .social {
+      text-align: center !important; } }
+
+@media (max-width: 576px) {
+  #showcase h1 {
+    font-size: 30px; }
+  #showcase-inner h1 {
+    font-size: 40px; } }
