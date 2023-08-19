@@ -1,4 +1,4 @@
-# Django Automobile Listing Platform
+# WooAuto: List Your Car!
 
 A Django-based platform for listing and searching automobiles. 
 
